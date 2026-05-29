@@ -6,15 +6,15 @@
 
 ```
 transformer_compression/
-├── config.py          ← ⚙️  SEUL FICHIER À MODIFIER
+├── config.py          ←  FICHIER À MODIFIER
 │
-├── baseline.py        ← 📦 Script indépendant — modèle original
-├── quantization.py    ← ⚡ Script indépendant — INT8
-├── pruning.py         ← ✂️  Script indépendant — L1 sparsity
-├── distillation.py    ← 🎓 Script indépendant — teacher → student
+├── baseline.py        ←  Script indépendant — modèle original
+├── quantization.py    ←  Script indépendant — INT8
+├── pruning.py         ←  Script indépendant — L1 sparsity
+├── distillation.py    ←  Script indépendant — teacher → student
 │
-├── run_all.py         ← 🔁 Optionnel — lance tout en séquence
-├── plot_results.py    ← 📊 Graphiques matplotlib
+├── run_all.py         ←  Optionnel — lance tout en séquence
+├── plot_results.py    ←  Graphiques matplotlib
 │
 ├── model_loader.py    ← Chargement universel HF (partagé)
 ├── evaluator.py       ← Évaluation adaptée par tâche (partagé)
@@ -79,10 +79,10 @@ Comportement pour chaque script (`quantization.py`, `pruning.py`, `distillation.
 
 | Situation | Comportement |
 |---|---|
-| `saves/baseline/` existe | ♻️ Réutilise le modèle local (rapide) |
-| `saves/baseline/` absent | 🌐 Recharge depuis HuggingFace |
-| `results/baseline.json` existe | 📊 Affiche la comparaison baseline vs. compressé |
-| `results/baseline.json` absent | ℹ️ Affiche les métriques seules |
+| `saves/baseline/` existe |  Réutilise le modèle local (rapide) |
+| `saves/baseline/` absent |  Recharge depuis HuggingFace |
+| `results/baseline.json` existe |  Affiche la comparaison baseline vs. compressé |
+| `results/baseline.json` absent |  Affiche les métriques seules |
 
 ---
 
