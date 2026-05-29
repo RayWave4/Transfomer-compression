@@ -1,0 +1,30 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+torch>=2.1.0
+transformers>=4.40.0
+datasets>=2.18.0
+accelerate>=0.28.0
+huggingface_hub>=0.22.0
+
+# ── Optionnel : modèles quantizés sur GPU (Llama, Mistral, etc.) ──────────────
+# bitsandbytes>=0.43.0        # quantization 8-bit / 4-bit GPU
+
+# ── Optionnel : export ONNX + quantization ORTm ──────────────────────────────
+# optimum[onnxruntime]>=1.18.0
+
+# ── Optionnel : structured pruning ───────────────────────────────────────────
+# nn_pruning>=0.1.0
+
+# ── Vision ────────────────────────────────────────────────────────────────────
+Pillow>=10.0.0                 # images (ViT, ResNet...)
+
+# ── Audio ─────────────────────────────────────────────────────────────────────
+# soundfile>=0.12.0            # décommenter si tu testes Whisper / Wav2Vec
+
+# ── Visualisation & utilitaires ───────────────────────────────────────────────
+matplotlib>=3.8.0
+numpy>=1.26.0
+tqdm>=4.66.0
+scikit-learn>=1.4.0
+
+# ── Optionnel : mesure de l'empreinte carbone ─────────────────────────────────
+# codecarbon>=2.3.0
