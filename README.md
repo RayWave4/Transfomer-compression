@@ -128,4 +128,4 @@ saves/
 | `DISTIL_TRAIN_SAMPLES` | 5000 | Exemples entraînement distillation |
 | `DISTIL_EPOCHS` | 3 | Epochs distillation |
 | `DISTIL_TEMPERATURE` | 4.0 | Température softmax |
-| `DISTIL_ALPHA` | 0.5 | Poids CE vs KL |
+| `DISTIL_ALPHA` | 0.5 | Poids CE vs KL |    
